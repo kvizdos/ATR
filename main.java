@@ -253,7 +253,7 @@ public final class main extends JavaPlugin implements Listener {
 	public void onPlayerJoin(PlayerJoinEvent e) {
 		Player p = e.getPlayer();
 		if(p.getName().equalsIgnoreCase("DiamondMCPro")) {
-			e.setJoinMessage("");
+			e.setJoinMessage(ChatColor.BLUE + "" + ChatColor.BOLD + "DiamondMCPro, THE DIAMOND GOD JOINED!");
 		} else {
 		e.setJoinMessage(getConfig().getString("Settings.Join.Msg").replaceAll("PLAYER", p.getName() + "")
 				.replaceAll("RED", ChatColor.RED + "").replaceAll("BLUE", ChatColor.BLUE + "")
