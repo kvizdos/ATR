@@ -1,0 +1,83 @@
+name: AdminToolsRevamped
+version: 1.3
+main: com.kentonvizdos.ATR.main
+description: More commands for all of your admins!
+authors: [_Kento, Gamma]
+commands:
+  at:
+    description: Main Commands!
+    usage: /at
+  911:
+    description: A Command for guests, to call an admin!
+    usage: /911 <reason>
+  report:
+    description: Report a player!
+    usage: /report <player> <reason>
+permissions:
+    at.*:
+        description: Gives access to all AdminTool commands
+        children:
+            at.bc: true
+            at.gm: true
+            at.ban: true
+            at.config: true
+            at.freeze: true
+            at.spec: true
+            at.heal: true
+            at.warn: true
+            at.research: true
+            at.emergency: true
+            at.recieve: true
+            at.report: true
+            at.invcheck: true
+            at.blacklist: true
+            at.blacklisted: true
+            at.gui: true
+            at.cc: true
+            at.votekick: true
+            at.voteban: true
+            at.mute: true       
+    at.mod:
+        description: Gives access to moderator AdminTool commands
+        children:
+            at.bc: false
+            at.gm: true
+            at.ban: false
+            at.config: false
+            at.freeze: true
+            at.spec: true
+            at.heal: false
+            at.warn: true
+            at.research: true
+            at.emergency: true
+            at.recieve: true
+            at.report: true
+            at.invcheck: true
+            at.blacklist: false
+            at.blacklisted: true
+            at.gui: true     
+            at.votekick: true
+            at.voteban: true
+            at.mute: true       
+    at.player:
+        description: Gives access to player AdminTool commands
+        children:
+            at.bc: false
+            at.gm: false
+            at.ban: false
+            at.config: false
+            at.freeze: false
+            at.spec: false
+            at.heal: false
+            at.warn: false
+            at.research: false
+            at.emergency: true
+            at.recieve: false
+            at.report: true
+            at.invcheck: false
+            at.blacklist: false
+            at.blacklisted: true
+            at.gui: false
+            at.votekick: true
+            at.voteban: true
+            at.mute: false
