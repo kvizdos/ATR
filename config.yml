@@ -1,0 +1,15 @@
+Settings:
+  Autobroadcaster:
+     Enabled: true
+     Msg: GREENDon't Forget to Subscribe!
+     Delay: 1200
+  Join:
+     Msg: BLUEJoinDG> GREENPLAYER
+  Leave:
+     Msg: REDLeaveDG> GREENPLAYER 
+  Ban:
+     AppealLink: www.puturlhere.com
+  AutoBan:
+     Length: 60
+badwords:
+     - REMOVEME
