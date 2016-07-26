@@ -6,10 +6,12 @@ authors: [_Kento, Gamma]
 commands:
   at:
     description: Main Commands!
-    usage: /at
+    usage: /<command>
+    aliases: [atr, admintools, admintoolsrevamped]
   911:
     description: A Command for guests, to call an admin!
-    usage: /911 <reason>
+    usage: /<command> <reason>
+    aliases: [999]
   report:
     description: Report a player!
     usage: /report <player> <reason>
